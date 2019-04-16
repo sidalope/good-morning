@@ -14,7 +14,7 @@ auth_token = getenv('TWILIO_AUTH_TOKEN')
 sender = getenv('TWILIO_NUMBER')
 
 
-class messenger:
+class Messenger:
 
     def send_message(self, recipient, body):
         client = Client(account_sid, auth_token)
@@ -33,7 +33,7 @@ if __name__ == '__main__':
         body = argv[2]
         # print(f'from: {sender} to: {receiver} message: {body}')
 
-        messenger().send_message(recipient, body)
+        Messenger().send_message(recipient, body)
     else:
         print(f'You passed in {len(argv)} arguments.')
         print('send_text takes 2 arguments: a recipient and a message body.')
