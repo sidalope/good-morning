@@ -4,3 +4,4 @@ result.html
 __pycache__/
 .env
 twilio.txt
+log.txt

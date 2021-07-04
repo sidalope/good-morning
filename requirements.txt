@@ -1,0 +1,19 @@
+# packaging
+pip>=9
+setuptools>=26
+twine==3.4.1
+wheel>=0.29
+
+# APIs
+twilio==6.60.0
+
+# tests/linter
+black==21.6b0
+coverage==5.5
+flake8==3.9.2
+pytest==6.2.4
+
+# utilities
+six>=1.14
+termcolor==1.1.0
+python-dotenv==0.18.0
